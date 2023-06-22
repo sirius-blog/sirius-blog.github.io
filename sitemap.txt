@@ -50,8 +50,8 @@ https://sirius-blog.github.io/tags/ARM/
 https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
 https://sirius-blog.github.io/tags/PHY/
 https://sirius-blog.github.io/tags/Xilinx/
-https://sirius-blog.github.io/tags/FPGA/
 https://sirius-blog.github.io/tags/ISE-14-7/
+https://sirius-blog.github.io/tags/FPGA/
 https://sirius-blog.github.io/tags/Xilinx%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/
 https://sirius-blog.github.io/tags/Vivado/
 https://sirius-blog.github.io/tags/%E5%BE%AE%E6%B3%A2%E8%AE%A4%E7%9F%A5/
@@ -69,8 +69,8 @@ https://sirius-blog.github.io/tags/%E5%BA%93%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8
 https://sirius-blog.github.io/tags/STM32F1/
 https://sirius-blog.github.io/categories/Web/
 https://sirius-blog.github.io/categories/ARM-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
-https://sirius-blog.github.io/categories/FPGA-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
 https://sirius-blog.github.io/categories/FPGA-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/
+https://sirius-blog.github.io/categories/FPGA-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
 https://sirius-blog.github.io/categories/IC%E5%B0%8F%E7%9F%A5%E8%AF%86/
 https://sirius-blog.github.io/categories/PCB-%E6%8B%93%E5%B1%95/
 https://sirius-blog.github.io/categories/SCH-%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/

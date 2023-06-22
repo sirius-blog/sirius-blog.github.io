@@ -80,31 +80,6 @@
     
     
     <entry>
-      <title>小知识(3) 什么是中频杂散</title>
-      <link href="/posts/1657519875.html"/>
-      <url>/posts/1657519875.html</url>
-      
-        <content type="html"><![CDATA[<blockquote><ul><li>说明：知识拓展。</li></ul></blockquote><h2 id="什么是中频杂散"><a class="markdownIt-Anchor" href="#什么是中频杂散"></a> 什么是中频杂散？</h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">个人理解    </button><div class="hide-content"><p>我的理解：<br />不同频点的同等大小信号经设备通道增益后可能会出现不同的增益效果，最大最小的增益之间的差值就代表了增益的落差程度，也就是增益的起伏程度，起伏越小就表示设备通道增益越平稳，这就叫通道增益平坦度。<br />计算公式：增益差=增益最大值-增益最小值。</p></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">科学芝士    </button><div class="hide-content"><p>官方解析：<br />暂无。</p></div></div>]]></content>
-      
-      
-      <categories>
-          
-          <category> IC小知识 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微波认知 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>PCB拓展(2) 常见器件封装及焊接曲线</title>
       <link href="/posts/425272644.html"/>
       <url>/posts/425272644.html</url>
@@ -126,6 +101,31 @@
             <tag> 应用拓展 </tag>
             
             <tag> 器件封装及焊接曲线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小知识(3) 什么是中频杂散</title>
+      <link href="/posts/1657519875.html"/>
+      <url>/posts/1657519875.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><ul><li>说明：知识拓展。</li></ul></blockquote><h2 id="什么是中频杂散"><a class="markdownIt-Anchor" href="#什么是中频杂散"></a> 什么是中频杂散？</h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">个人理解    </button><div class="hide-content"><p>我的理解：<br />不同频点的同等大小信号经设备通道增益后可能会出现不同的增益效果，最大最小的增益之间的差值就代表了增益的落差程度，也就是增益的起伏程度，起伏越小就表示设备通道增益越平稳，这就叫通道增益平坦度。<br />计算公式：增益差=增益最大值-增益最小值。</p></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">科学芝士    </button><div class="hide-content"><p>官方解析：<br />暂无。</p></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> IC小知识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微波认知 </tag>
             
         </tags>
       
@@ -705,9 +705,9 @@
             
             <tag> Xilinx </tag>
             
-            <tag> FPGA </tag>
-            
             <tag> ISE 14.7 </tag>
+            
+            <tag> FPGA </tag>
             
             <tag> Xilinx开发环境应用笔记 </tag>
             
