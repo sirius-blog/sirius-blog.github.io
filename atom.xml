@@ -118,6 +118,36 @@
   </entry>
   
   <entry>
+    <title>小知识(3) 什么是中频杂散</title>
+    <link href="https://sirius-blog.github.io/posts/1657519875.html"/>
+    <id>https://sirius-blog.github.io/posts/1657519875.html</id>
+    <published>2022-12-11T18:29:18.000Z</published>
+    <updated>2023-06-18T11:32:25.157Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><ul><li>说明：知识拓展。</li></ul></blockquote><h2 id="什么是中频杂散"><a class="markdownIt-Anchor" href="#什么是中频杂散"></a> 什么是中频杂散？</h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">个人理解    </button><div class="hide-content"><p>我的理解：<br />不同频点的同等大小信号经设备通道增益后可能会出现不同的增益效果，最大最小的增益之间的差值就代表了增益的落差程度，也就是增益的起伏程度，起伏越小就表示设备通道增益越平稳，这就叫通道增益平坦度。<br />计算公式：增益差=增益最大值-增益最小值。</p></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">科学芝士    </button><div class="hide-content"><p>官方解析：<br />暂无。</p></div></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;说明：知识拓展。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;什么是中频杂散&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#什么是中频杂散&quot;&gt;&lt;/a&gt; 什么是中频杂散？&lt;/h2&gt;
+&lt;di</summary>
+      
+    
+    
+    
+    <category term="IC小知识" scheme="https://sirius-blog.github.io/categories/IC%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="微波认知" scheme="https://sirius-blog.github.io/tags/%E5%BE%AE%E6%B3%A2%E8%AE%A4%E7%9F%A5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PCB拓展(2) 常见器件封装及焊接曲线</title>
     <link href="https://sirius-blog.github.io/posts/425272644.html"/>
     <id>https://sirius-blog.github.io/posts/425272644.html</id>
@@ -147,36 +177,6 @@
     <category term="应用拓展" scheme="https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/"/>
     
     <category term="器件封装及焊接曲线" scheme="https://sirius-blog.github.io/tags/%E5%99%A8%E4%BB%B6%E5%B0%81%E8%A3%85%E5%8F%8A%E7%84%8A%E6%8E%A5%E6%9B%B2%E7%BA%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小知识(3) 什么是中频杂散</title>
-    <link href="https://sirius-blog.github.io/posts/1657519875.html"/>
-    <id>https://sirius-blog.github.io/posts/1657519875.html</id>
-    <published>2022-12-11T18:29:18.000Z</published>
-    <updated>2023-06-18T11:32:25.157Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><ul><li>说明：知识拓展。</li></ul></blockquote><h2 id="什么是中频杂散"><a class="markdownIt-Anchor" href="#什么是中频杂散"></a> 什么是中频杂散？</h2><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">个人理解    </button><div class="hide-content"><p>我的理解：<br />不同频点的同等大小信号经设备通道增益后可能会出现不同的增益效果，最大最小的增益之间的差值就代表了增益的落差程度，也就是增益的起伏程度，起伏越小就表示设备通道增益越平稳，这就叫通道增益平坦度。<br />计算公式：增益差=增益最大值-增益最小值。</p></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">科学芝士    </button><div class="hide-content"><p>官方解析：<br />暂无。</p></div></div>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;说明：知识拓展。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;什么是中频杂散&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#什么是中频杂散&quot;&gt;&lt;/a&gt; 什么是中频杂散？&lt;/h2&gt;
-&lt;di</summary>
-      
-    
-    
-    
-    <category term="IC小知识" scheme="https://sirius-blog.github.io/categories/IC%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="微波认知" scheme="https://sirius-blog.github.io/tags/%E5%BE%AE%E6%B3%A2%E8%AE%A4%E7%9F%A5/"/>
     
   </entry>
   
@@ -817,9 +817,9 @@
     
     <category term="Xilinx" scheme="https://sirius-blog.github.io/tags/Xilinx/"/>
     
-    <category term="ISE 14.7" scheme="https://sirius-blog.github.io/tags/ISE-14-7/"/>
-    
     <category term="FPGA" scheme="https://sirius-blog.github.io/tags/FPGA/"/>
+    
+    <category term="ISE 14.7" scheme="https://sirius-blog.github.io/tags/ISE-14-7/"/>
     
     <category term="Xilinx开发环境应用笔记" scheme="https://sirius-blog.github.io/tags/Xilinx%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
     
