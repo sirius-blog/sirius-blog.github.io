@@ -181,39 +181,6 @@
   </entry>
   
   <entry>
-    <title>文档格式(2) 进货检验记录</title>
-    <link href="https://sirius-blog.github.io/posts/3713435763.html"/>
-    <id>https://sirius-blog.github.io/posts/3713435763.html</id>
-    <published>2022-12-11T18:29:18.000Z</published>
-    <updated>2023-06-18T02:20:18.598Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><ul><li>说明：进货检验记录样板。</li></ul></blockquote><table style="border-collapse: collapse; ">        <!-- 标题 -->            <tr>                <td style="border: 0px;" align="left">XXXXXX公司</td>                <td style="border: 0px;font-size: large;" align="center">进货检验记录表</td>                <td style="border: 0px;" align="right" colspan="2">表单编号：XX-XX-XX</td>            </tr>            <tr>                <td style="border: 0px;" colspan="2"> </td>                <td style="border: 0px;" align="right">NO：</td>                <td style="border: 0px;"> </td>            </tr></table><table border="0px" style="border-collapse: collapse;">        <!-- 标题 -->     <!--    <caption> 进货检验记录表 </caption>        头部 -->        <thead>            <tr>                <th rowspan="2">日期</th>                <th rowspan="2">供方名称</th>                <th rowspan="2">产品</th>                <th rowspan="2">送检<br>数量</th>                <th rowspan="2">抽检<br>数量</th>                <th colspan="6">质量检验情况</th>                <th colspan="2">验证结果</th>                <th rowspan="2">备注</th>            </tr>            <tr>                <th>A</th>                <th>B</th>                <th>C</th>                <th>D</th>                <th>E</th>                <th>其它</th>                <th>合格</th>                <th>不合格</th>            </tr>        </thead>        <!-- 主体 --><tbody>            <tr>                <td>2000.01.01</td>                <td>AMD</td>                <td>CPU</td>                <td>52</td>                <td>2</td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr>            <tr>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr>            <tr>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr></tbody>        <!-- 底部 --><tfoot>            <tr>                <td style="border: 0px;font-size: smaller;" align="left" colspan="14"> 注：A 供货单位应符合要求；B 包装完好；C具有合格证明或相应的测试证明；D 规格、生产单位、数量要与入库单相符； E外型封装牢固、整齐，无裂缝、无气孔，引脚的镀层应平整，无氧化、锈蚀、断裂。符合要求用“√”表示，不符合要求用“×”表示。 </td>            </tr>            <tr>                <td style="border: 0px;" colspan="10"> </td>                <td style="border: 0px;" align="right" colspan="2">质检人员</td>                <td style="border: 0px;" align="left" colspan="2">  </td>            </tr></tfoot></table>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;说明：进货检验记录样板。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;table style=&quot;border-collapse: collapse; &quot;&gt;
-        &lt;!-- 标题 --&gt;
-            &lt;tr&gt;</summary>
-      
-    
-    
-    
-    <category term="PCB 拓展" scheme="https://sirius-blog.github.io/categories/PCB-%E6%8B%93%E5%B1%95/"/>
-    
-    
-    <category term="应用拓展" scheme="https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/"/>
-    
-    <category term="文档格式" scheme="https://sirius-blog.github.io/tags/%E6%96%87%E6%A1%A3%E6%A0%BC%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
     <title>文档格式(1) 生产文档</title>
     <link href="https://sirius-blog.github.io/posts/2708347695.html"/>
     <id>https://sirius-blog.github.io/posts/2708347695.html</id>
@@ -233,6 +200,39 @@
 &lt;table border=&quot;1&quot; style=&quot;border-collapse: collapse;&quot;&gt;
         &lt;!-- 标题 --&gt;
         </summary>
+      
+    
+    
+    
+    <category term="PCB 拓展" scheme="https://sirius-blog.github.io/categories/PCB-%E6%8B%93%E5%B1%95/"/>
+    
+    
+    <category term="应用拓展" scheme="https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/"/>
+    
+    <category term="文档格式" scheme="https://sirius-blog.github.io/tags/%E6%96%87%E6%A1%A3%E6%A0%BC%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文档格式(2) 进货检验记录</title>
+    <link href="https://sirius-blog.github.io/posts/3713435763.html"/>
+    <id>https://sirius-blog.github.io/posts/3713435763.html</id>
+    <published>2022-12-11T18:29:18.000Z</published>
+    <updated>2023-06-18T02:20:18.598Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><ul><li>说明：进货检验记录样板。</li></ul></blockquote><table style="border-collapse: collapse; ">        <!-- 标题 -->            <tr>                <td style="border: 0px;" align="left">XXXXXX公司</td>                <td style="border: 0px;font-size: large;" align="center">进货检验记录表</td>                <td style="border: 0px;" align="right" colspan="2">表单编号：XX-XX-XX</td>            </tr>            <tr>                <td style="border: 0px;" colspan="2"> </td>                <td style="border: 0px;" align="right">NO：</td>                <td style="border: 0px;"> </td>            </tr></table><table border="0px" style="border-collapse: collapse;">        <!-- 标题 -->     <!--    <caption> 进货检验记录表 </caption>        头部 -->        <thead>            <tr>                <th rowspan="2">日期</th>                <th rowspan="2">供方名称</th>                <th rowspan="2">产品</th>                <th rowspan="2">送检<br>数量</th>                <th rowspan="2">抽检<br>数量</th>                <th colspan="6">质量检验情况</th>                <th colspan="2">验证结果</th>                <th rowspan="2">备注</th>            </tr>            <tr>                <th>A</th>                <th>B</th>                <th>C</th>                <th>D</th>                <th>E</th>                <th>其它</th>                <th>合格</th>                <th>不合格</th>            </tr>        </thead>        <!-- 主体 --><tbody>            <tr>                <td>2000.01.01</td>                <td>AMD</td>                <td>CPU</td>                <td>52</td>                <td>2</td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr>            <tr>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr>            <tr>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>                <td> </td>            </tr></tbody>        <!-- 底部 --><tfoot>            <tr>                <td style="border: 0px;font-size: smaller;" align="left" colspan="14"> 注：A 供货单位应符合要求；B 包装完好；C具有合格证明或相应的测试证明；D 规格、生产单位、数量要与入库单相符； E外型封装牢固、整齐，无裂缝、无气孔，引脚的镀层应平整，无氧化、锈蚀、断裂。符合要求用“√”表示，不符合要求用“×”表示。 </td>            </tr>            <tr>                <td style="border: 0px;" colspan="10"> </td>                <td style="border: 0px;" align="right" colspan="2">质检人员</td>                <td style="border: 0px;" align="left" colspan="2">  </td>            </tr></tfoot></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;说明：进货检验记录样板。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;table style=&quot;border-collapse: collapse; &quot;&gt;
+        &lt;!-- 标题 --&gt;
+            &lt;tr&gt;</summary>
       
     
     
