@@ -4,7 +4,7 @@
   <url>
     <loc>https://sirius-blog.github.io/posts/375725893.html</loc>
     
-    <lastmod>2023-06-20</lastmod>
+    <lastmod>2023-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>https://sirius-blog.github.io/posts/3580214588.html</loc>
     
-    <lastmod>2023-06-20</lastmod>
+    <lastmod>2023-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,34 @@
   <url>
     <loc>https://sirius-blog.github.io/posts/4263387656.html</loc>
     
-    <lastmod>2023-06-20</lastmod>
+    <lastmod>2023-06-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sirius-blog.github.io/posts/1704327597.html</loc>
+    
+    <lastmod>2023-06-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sirius-blog.github.io/posts/3111608661.html</loc>
+    
+    <lastmod>2023-06-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://sirius-blog.github.io/posts/2863292947.html</loc>
+    
+    <lastmod>2023-06-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -77,24 +104,6 @@
     <loc>https://sirius-blog.github.io/posts/2708347695.html</loc>
     
     <lastmod>2023-06-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sirius-blog.github.io/posts/1704327597.html</loc>
-    
-    <lastmod>2023-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sirius-blog.github.io/posts/3111608661.html</loc>
-    
-    <lastmod>2023-06-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -228,15 +237,6 @@
   
   <url>
     <loc>https://sirius-blog.github.io/posts/3367940287.html</loc>
-    
-    <lastmod>2023-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://sirius-blog.github.io/posts/2863292947.html</loc>
     
     <lastmod>2023-06-10</lastmod>
     
@@ -409,7 +409,7 @@
 
   <url>
     <loc>https://sirius-blog.github.io/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -417,161 +417,161 @@
   
   <url>
     <loc>https://sirius-blog.github.io/tags/Hexo/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%9B%BD%E4%BA%A7/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/ARM/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/PHY/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/Xilinx/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/FPGA/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/ISE-14-7/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/Xilinx%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/Vivado/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%BE%AE%E6%B3%A2%E8%AE%A4%E7%9F%A5/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/PCB/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%99%A8%E4%BB%B6%E5%B0%81%E8%A3%85%E5%8F%8A%E7%84%8A%E6%8E%A5%E6%9B%B2%E7%BA%BF/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/Schematic/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E6%96%87%E6%A1%A3%E6%A0%BC%E5%BC%8F/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/GigaDevice-%E5%9B%BD%E4%BA%A7/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/MCU/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%BA%93%E5%87%BD%E6%95%B0%E7%89%88%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/GD32F30x/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/STMicroelectronics-ST/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/%E5%BA%93%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8%E7%BB%83%E4%B9%A0/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/tags/STM32F1/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -580,63 +580,63 @@
   
   <url>
     <loc>https://sirius-blog.github.io/categories/Web/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/ARM-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/FPGA-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/FPGA-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%BA%94%E7%94%A8%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/IC%E5%B0%8F%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/PCB-%E6%8B%93%E5%B1%95/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/SCH-%E5%BA%94%E7%94%A8%E6%8B%93%E5%B1%95/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/MCU-%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sirius-blog.github.io/categories/MCU-%E5%BA%94%E7%94%A8%E7%BB%83%E4%B9%A0/</loc>
-    <lastmod>2023-06-22</lastmod>
+    <lastmod>2023-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

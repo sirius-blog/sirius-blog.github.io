@@ -749,12 +749,17 @@
     <link href="https://sirius-blog.github.io/posts/375725893.html"/>
     <id>https://sirius-blog.github.io/posts/375725893.html</id>
     <published>2022-10-29T00:29:18.000Z</published>
-    <updated>2023-06-20T15:33:22.206Z</updated>
+    <updated>2023-06-23T01:37:56.571Z</updated>
     
     <content type="html"><![CDATA[<p>本章节旨在记录“88E1111的寄存器配置”的分析。</p><h2 id="配置原则"><a class="markdownIt-Anchor" href="#配置原则"></a> 配置原则</h2><p>PHY的寄存器中每1bit都表示不同含义，非必要改动的地方采用默认配置，故下列配置“按先读后写，精准调节”的原则进行逐位赋值。</p><h2 id="配置流程"><a class="markdownIt-Anchor" href="#配置流程"></a> 配置流程</h2><blockquote><p>R27</p><blockquote><p>清除bit[3:0];<br />置bit[3:0]=0xe;即表示GMII到SGMII.<br />置bit[15]=0x1;即表示禁用Fiber和Copper的选择.</p></blockquote></blockquote><blockquote><p>R0</p><blockquote><p>置bit[15]=0x1;即表示写复位，写入的寄存器值生效.</p></blockquote></blockquote><blockquote><p>R0</p><blockquote><p>置bit[12]=0x1;即表示使能自协商.<br />置bit[18]=0x1;即表示选择全双工模式.</p></blockquote></blockquote><blockquote><p>R20</p><blockquote><p>置bit[6:4]=0x5;即表示MAC百兆速率.</p></blockquote></blockquote><blockquote><p>R16</p><blockquote><p>置bit[6:5]=0x3;即表示MDI交叉模式，以及自动分频.</p></blockquote></blockquote><blockquote><p>R27</p><blockquote><p>置bit[15]=0x1;即表示禁用Fiber和Copper的自动选择.</p></blockquote></blockquote><blockquote><p>R0</p><blockquote><p>置bit[12]=0x1;即表示使能自协商.<br />置bit[15]=0x1;即表示写复位，写入的寄存器值生效.</p></blockquote></blockquote><h2 id="异常现象"><a class="markdownIt-Anchor" href="#异常现象"></a> 异常现象</h2><p>PHY的SGMII链路网络异常，无法ping通IP地址。</p><h2 id="不同状态下phy的sgmii寄存器读取对比"><a class="markdownIt-Anchor" href="#不同状态下phy的sgmii寄存器读取对比"></a> 不同状态下PHY的SGMII寄存器读取对比</h2><table><thead><tr><th>序号</th><th>寄存器名</th><th>异常状态（不通）</th><th>正常状态（能通）</th></tr></thead><tbody><tr><td>1</td><td>R0</td><td>0x1140</td><td>0x1140</td></tr><tr><td>2</td><td>R1</td><td>0x0169</td><td>0x0169</td></tr><tr><td>3</td><td>R15</td><td>0xC000</td><td>0xc000</td></tr><tr><td>4</td><td>R16</td><td>0x0078</td><td>0x0078</td></tr><tr><td>5</td><td>R17</td><td>0x08E0</td><td>0x7C10</td></tr><tr><td>6</td><td>R20</td><td>0x0C40</td><td>0x0C40</td></tr><tr><td>7</td><td>R27</td><td>0x848E</td><td>0x848E</td></tr></tbody></table>]]></content>
     
     
-    <summary type="html">MCU访问外围设备88E1111寄存器配置</summary>
+      
+      
+    <summary type="html">&lt;p&gt;本章节旨在记录“88E1111的寄存器配置”的分析。&lt;/p&gt;
+&lt;h2 id=&quot;配置原则&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#配置原则&quot;&gt;&lt;/a&gt; 配置原则&lt;/h2&gt;
+&lt;p&gt;PHY的寄存器中每1bit都表示不同含义，非必要改动的地方采用默</summary>
+      
     
     
     
@@ -776,12 +781,17 @@
     <link href="https://sirius-blog.github.io/posts/1704327597.html"/>
     <id>https://sirius-blog.github.io/posts/1704327597.html</id>
     <published>2022-10-29T00:29:18.000Z</published>
-    <updated>2023-06-15T14:34:46.557Z</updated>
+    <updated>2023-06-23T01:34:52.114Z</updated>
     
     <content type="html"><![CDATA[<p>本章节旨在记录“Vivado固化FPGA外挂bpi-Flash(型号S29GL256P)”基本步骤。</p><h2 id="准备工作"><a class="markdownIt-Anchor" href="#准备工作"></a> 准备工作</h2><p>本章节是，使用Vivado(以Vivado 2018.3为例)固化.MCS文件到FPFGA外挂BPI接口存储器件过程，在操作前应准备好要固化的MCS格式文件及与FPGA对应关系，以及明确要固化的目标器件型号，如FPGA型号、连接方式、外挂Flash型号、位宽等等。开始以下内容即表示已完成准备工作。</p><h2 id="打开vivado工具"><a class="markdownIt-Anchor" href="#打开vivado工具"></a> 打开Vivado工具</h2><p>先将设备加电后，接上仿真器，双击Vivado图标，点击Open Hardware Manager以打开固化工具。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a02_b01.png" alt="图标" style="zoom:100%;" /></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a02_b02.png" alt="图标" style="zoom:100%;" /></div></div><h2 id="扫链连接器件"><a class="markdownIt-Anchor" href="#扫链连接器件"></a> 扫链连接器件</h2><p>点击“Auto Connect”连接板子。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a03_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><h2 id="添加配置存储器件"><a class="markdownIt-Anchor" href="#添加配置存储器件"></a> 添加配置存储器件</h2><p>在Hardware面板中右击FPGA器件（xc7vx690t_0），选择“Add Configuration Memery Device”。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a04_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>在弹出的添加配置存储器的界面中，找到板载的Flash存储器型号，点击OK，完成添加,Flash型号如下图所示。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a04_b02.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>添加完成后，Vivado会提示添加完成，是否立即配置存储器。点击OK，进入配置存储器的界面，选择生成的Mcs文件，然后点击OK，开始将mcs文件烧写到外部配置flash存储器中。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/003_a04_b03.png" alt="界面操作截图" style="zoom:100%;" /></div></div>]]></content>
     
     
-    <summary type="html">Vivado固化FPGA外挂bpi-Flash.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;本章节旨在记录“Vivado固化FPGA外挂bpi-Flash(型号S29GL256P)”基本步骤。&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#准备工作&quot;&gt;&lt;/a&gt; 准备工作&lt;/h2&gt;
+&lt;p&gt;本章节是，使用V</summary>
+      
     
     
     
@@ -803,12 +813,17 @@
     <link href="https://sirius-blog.github.io/posts/3111608661.html"/>
     <id>https://sirius-blog.github.io/posts/3111608661.html</id>
     <published>2022-10-28T23:29:18.000Z</published>
-    <updated>2023-06-15T14:08:20.924Z</updated>
+    <updated>2023-06-23T01:34:41.040Z</updated>
     
     <content type="html"><![CDATA[<p>本章节旨在记录“ISE14.7固化FPGA外挂bpi-Flash(型号S29GL256P)”基本步骤。</p><h2 id="准备工作"><a class="markdownIt-Anchor" href="#准备工作"></a> 准备工作</h2><p>本章节是，使用ISE固化.MCS文件到FPFGA外挂BPI接口存储器件过程，在操作前应准备好要固化的MCS格式文件及与FPGA对应关系，以及明确要固化的目标器件型号，如FPGA型号、连接方式、外挂Flash型号、位宽等等。开始以下内容即表示已完成准备工作。</p><h2 id="打开固化工具"><a class="markdownIt-Anchor" href="#打开固化工具"></a> 打开固化工具</h2><p>先将设备加电后，接上仿真器，双击iMPACT，以打开固化工具。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a02_b01.png" alt="图标" style="zoom:100%;" /></div></div><h2 id="打开扫链界面"><a class="markdownIt-Anchor" href="#打开扫链界面"></a> 打开扫链界面</h2><p>在工具界面，双击Boundary Scan识别。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a03_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><h2 id="开始扫链"><a class="markdownIt-Anchor" href="#开始扫链"></a> 开始扫链</h2><p>右击图中蓝色字体区域，在出现的选项中选择initial Chain。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a04_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><h2 id="选择目标器件并加载对应固化文件"><a class="markdownIt-Anchor" href="#选择目标器件并加载对应固化文件"></a> 选择目标器件并加载对应固化文件</h2><p>扫链完成后，会出现一些弹窗，单击No，在随后出现的界面中点击Cancel 。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a05_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a05_b02.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>右击芯片，选择Add SPI/BPI Flash，选择mcs文件。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a05_b03.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>根据mcs文件输出的存放地址，选择mcs文件，选择Flash芯片，型号为（根据开发板型号自己选择），点击OK。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a05_b04.png" alt="界面操作截图" style="zoom:100%;" /></div></div><h2 id="开始固化操作"><a class="markdownIt-Anchor" href="#开始固化操作"></a> 开始固化操作</h2><p>右击Flash，选择program。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a06_b01.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>出现属性弹窗界面，单击OK</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a06_b02.png" alt="界面操作截图" style="zoom:100%;" /></div></div><p>出现如下界面，耐心等待，完成固化。</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看图标样式    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/002_a06_b03.png" alt="界面操作截图" style="zoom:100%;" /></div></div>]]></content>
     
     
-    <summary type="html">ISE14.7固化FPGA外挂bpi-Flash.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;本章节旨在记录“ISE14.7固化FPGA外挂bpi-Flash(型号S29GL256P)”基本步骤。&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#准备工作&quot;&gt;&lt;/a&gt; 准备工作&lt;/h2&gt;
+&lt;p&gt;本章节是，使用</summary>
+      
     
     
     
@@ -830,12 +845,17 @@
     <link href="https://sirius-blog.github.io/posts/4263387656.html"/>
     <id>https://sirius-blog.github.io/posts/4263387656.html</id>
     <published>2022-10-27T18:29:18.000Z</published>
-    <updated>2023-06-20T14:13:39.469Z</updated>
+    <updated>2023-06-23T01:37:27.632Z</updated>
     
     <content type="html"><![CDATA[<p>本章节旨在记录“MCU访问外围设备SM2990数据异常”现象及排查（分析）故障器件SM2990的思路。</p><h2 id="异常现象"><a class="markdownIt-Anchor" href="#异常现象"></a> 异常现象</h2><p>相同驱动环境，芯片不同，现象表现有差别；<br />使用原工程驱动（同一位置对比）</p><p>SM2990：读取的数据不对；</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a01_b01.png" alt="现象" style="zoom:50%;" /></div></div><p>LTC2990：读取的数据正常；</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a01_b02.png" alt="现象" style="zoom:50%;" /></div></div><p>现象分析：相同位置相同驱动程序，同型号不同厂商器件的数据读取有差异，不正常。</p><h2 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h2><p>异常可能性：<br />1.可能是该外设器件问题；<br />2.可能器件技术差异，配置应有区别；</p><details class="toggle" ><summary class="toggle-button" style="">附-器件应用环境</summary><div class="toggle-content"><p>原理图：<br />位号U83器件：</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a02_b01.png" alt="电路" style="zoom:50%;" /></div></div><p>硬件实物：</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a02_b02.png" alt="电路" style="zoom:50%;" /></div></div><p>焊接实况及驱动状况简述：</p><table><thead><tr><th style="text-align:center">序号</th><th style="text-align:center">位号</th><th style="text-align:center">焊接器件</th><th style="text-align:center">数据读取状况</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center">U79</td><td style="text-align:center">-</td><td style="text-align:center">-</td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">U80</td><td style="text-align:center">LTC2990</td><td style="text-align:center">数据正常</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">U82</td><td style="text-align:center">LTC2990</td><td style="text-align:center">数据正常</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">U83</td><td style="text-align:center">SM2990</td><td style="text-align:center">数据读取与实际测量（万用表测量引脚）差别大</td></tr></tbody></table><p>注：四片器件的I2C接口、供电等硬件均一致，固件驱动一致。</p></div></details><h2 id="分析验证"><a class="markdownIt-Anchor" href="#分析验证"></a> 分析验证</h2><h3 id="检查数据异常时的外部实际测量状态"><a class="markdownIt-Anchor" href="#检查数据异常时的外部实际测量状态"></a> 检查数据异常时的外部实际测量状态</h3><p>外部硬件测量正常；</p><h3 id="使用sm2990厂商建议流程驱动使用单次采集增加vcc数值读取"><a class="markdownIt-Anchor" href="#使用sm2990厂商建议流程驱动使用单次采集增加vcc数值读取"></a> 使用SM2990厂商建议流程驱动（使用单次采集，增加Vcc数值读取）</h3><blockquote><p>厂商建议顺序：<br />1.先读取数据寄存器，然后再读取状态寄存器，确认状态寄存器是否都清零了。<br />2.配置设置寄存器为5F<br />3.向02寄存器中写入数据启动转换<br />4.延时一段时间比如500ms，这个仅用来调试，可以时间长点。<br />5，读取状态寄存器，确认转换已经完成。<br />6.再读取数据寄存器</p></blockquote><p>SM2990读取的数据不对（同板卡上LTC2990器件使用相同驱动流程）</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a03_b01.png" alt="验证结果" style="zoom:50%;" /></div></div><p>加长建议顺序中的“500ms”延时无改善</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a03_b02.png" alt="验证结果" style="zoom:50%;" /></div></div><p>控制寄存器的读入读出对比，确认控制寄存器写入了（打断点查看的结果一致），数据依旧不对</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a03_b03.png" alt="验证结果" style="zoom:50%;" /></div></div><h3 id="使用其它项目的相关驱动框架访问只适配了器件地址等信息无关键改动"><a class="markdownIt-Anchor" href="#使用其它项目的相关驱动框架访问只适配了器件地址等信息无关键改动"></a> 使用其它项目的相关驱动框架访问（只适配了器件地址等信息，无关键改动）</h3><p>SM2990器件的数据访问结果依旧不对</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-arm/notes-mcu/001_a03_b04.png" alt="验证结果" style="zoom:50%;" /></div></div><h2 id="有效解决方案"><a class="markdownIt-Anchor" href="#有效解决方案"></a> 有效解决方案</h2><p>更换新器件，原器件返厂分析原因。</p><h2 id="附件"><a class="markdownIt-Anchor" href="#附件"></a> 附件</h2><p>暂无</p>]]></content>
     
     
-    <summary type="html">MCU访问外围设备SM2990数据异常现象及解决（检查）办法.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;本章节旨在记录“MCU访问外围设备SM2990数据异常”现象及排查（分析）故障器件SM2990的思路。&lt;/p&gt;
+&lt;h2 id=&quot;异常现象&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#异常现象&quot;&gt;&lt;/a&gt; 异常现象&lt;/h2&gt;
+&lt;p&gt;相同驱动环境，</summary>
+      
     
     
     
@@ -855,12 +875,16 @@
     <link href="https://sirius-blog.github.io/posts/3580214588.html"/>
     <id>https://sirius-blog.github.io/posts/3580214588.html</id>
     <published>2022-10-27T18:29:18.000Z</published>
-    <updated>2023-06-20T15:30:22.720Z</updated>
+    <updated>2023-06-23T01:37:40.348Z</updated>
     
     <content type="html"><![CDATA[<p>使用KEIL v5下载程序到GD32器件上时，需要根据器件型号进行相关pack安装包解压以及算法文件加载，本说明中以GD32F303VET6（即GD32F30x_HD闪存存储产品）为例。</p><h2 id="资料准备"><a class="markdownIt-Anchor" href="#资料准备"></a> 资料准备</h2><p>官网下载GD32F30x的应用软件并安装相关pack；</p><h2 id=""><a class="markdownIt-Anchor" href="#"></a> </h2><h2 id="附件"><a class="markdownIt-Anchor" href="#附件"></a> 附件</h2><p>暂无</p>]]></content>
     
     
-    <summary type="html">MCU访问外围设备SM2990数据异常现象及解决（检查）办法.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;使用KEIL v5下载程序到GD32器件上时，需要根据器件型号进行相关pack安装包解压以及算法文件加载，本说明中以GD32F303VET6（即GD32F30x_HD闪存存储产品）为例。&lt;/p&gt;
+&lt;h2 id=&quot;资料准备&quot;&gt;&lt;a class=&quot;markdownIt-Anch</summary>
+      
     
     
     
@@ -880,12 +904,17 @@
     <link href="https://sirius-blog.github.io/posts/2863292947.html"/>
     <id>https://sirius-blog.github.io/posts/2863292947.html</id>
     <published>2022-10-27T18:29:18.000Z</published>
-    <updated>2023-06-10T03:02:10.007Z</updated>
+    <updated>2023-06-23T01:31:41.691Z</updated>
     
     <content type="html"><![CDATA[<p>本章节旨在记录“FPGA固化S29GL256P异常”现象及排查（分析）思路。</p><h2 id="异常现象"><a class="markdownIt-Anchor" href="#异常现象"></a> 异常现象</h2><p>使用Vivado开发环境固化FPFGA外挂BPI接口存储器件过程，即用mcs文件烧录S29GL256P Flash，Vivado界面无报错；</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/001_a01_b01.png" alt="现象" style="zoom:50%;" /></div></div><p>固化完成后重启设备，Vivado开发平台显示FPGA程序未自动加载完成；</p><div class="hide-block"><button type="button" class="hide-button" style="background-color: blue;">点我查看细节    </button><div class="hide-content"><img src="/assets/article/study-ic-fpga/notes-fpga/001_a01_b02.png" alt="现象" style="zoom:50%;" /></div></div><p>现象分析：正常情况下，FPGA程序固化在搭载的Flash芯片后再次加电后，FPGA会自动加载Flash中存储的程序；但目前现象是该程序无法自动加载成功。</p><h2 id="思路"><a class="markdownIt-Anchor" href="#思路"></a> 思路</h2><p>异常可能性：<br />1.可能是Flash芯片虚焊或者受损；<br />2.可能FPGA某些配置（软件或者硬件电路）不正常；</p><h2 id="有效解决方案"><a class="markdownIt-Anchor" href="#有效解决方案"></a> 有效解决方案</h2><p>暂无</p>]]></content>
     
     
-    <summary type="html">FPGA器件固化应用故障现象及解决（检查）办法.</summary>
+      
+      
+    <summary type="html">&lt;p&gt;本章节旨在记录“FPGA固化S29GL256P异常”现象及排查（分析）思路。&lt;/p&gt;
+&lt;h2 id=&quot;异常现象&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#异常现象&quot;&gt;&lt;/a&gt; 异常现象&lt;/h2&gt;
+&lt;p&gt;使用Vivado开发环境固化FPFGA外</summary>
+      
     
     
     
